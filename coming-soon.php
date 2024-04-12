@@ -23,7 +23,7 @@ $font_weight = isset($vscsp_options['bold_text']) && $vscsp_options['bold_text']
         body {
             background-color: <?php echo esc_html($background_color); ?>;
             color: <?php echo esc_html($text_color); ?>;
-            font-family: <?php echo esc_html($font_family); ?>;
+            font-family: <?php echo wp_strip_all_tags($font_family); ?>;
             text-align: center;
         }
         main {
