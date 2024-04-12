@@ -1,0 +1,46 @@
+#vscsp-site-status {
+    align-items: center;
+    background-color: #F8F8F8;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    display: flex;
+    font-weight: 500;
+    gap: 2px;
+    height: 22px;
+    margin-top: 4px;
+    padding: 0 .5rem;
+}
+  
+#vscsp-site-status span {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+  
+#vscsp-site-status[data-coming-soon="true"] {
+    border-color: #C71919;
+}
+  
+#vscsp-site-status[data-coming-soon="true"] #vscsp-site-status-coming-soon {
+    color: #C71919;
+}
+
+#vscsp-site-status[data-coming-soon="false"] #vscsp-site-status-live {
+    color: #278224;
+    display: inline-block;
+}
+
+#wpadminbar #wp-admin-bar-vscsp-site-status a {
+    display: inline-block;
+    padding: 0;
+}
+
+#wpadminbar #wp-admin-bar-vscsp-site-status a:hover {
+    color: #0073aa;
+}
+
+/* Hide the HostGator notification in the top right corner of the WordPress admin dashboard */
+#wp-admin-bar-top-secondary #wp-admin-bar-site-status {
+    display: none;
+}
